@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem
+    
+}
+
+section h2 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+
+}
+
+section {
+    background-color: #95c623;
+    border: 1px solid black;
+}
+
+section.col-span-2 {
+    background-color: #e55812;
+    color: white;
+    grid-column: span 2;
+
+}
+
+section.row-span-2 {
+    grid-row: span 2;
+    color: aliceblue;
+    background-color: #0e4749;
+}
